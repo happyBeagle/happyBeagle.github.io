@@ -10,7 +10,7 @@ description: upper bound  search와  lower bound search에 대해 학습합니�
 layout: single
 author_profile: true
 read_time: true
-comments: null
+comments: true
 share: true
 related: true
 toc: true
