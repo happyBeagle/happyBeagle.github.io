@@ -3,8 +3,6 @@ title: Upper Bound Search and Lower Bound Search ( c++/ python)
 categories:
 - Algorithms
 tags:
-- upperBound
-- lowerBound
 - search
 description: upper bound  search와  lower bound search에 대해 학습합니다.
 layout: single
