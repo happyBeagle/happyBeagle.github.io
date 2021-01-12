@@ -104,7 +104,7 @@ tensor기존의 data를 보존하고 shape를 변경하는 역할을 한다.
 인덱스가 1인 위치에 크기가 1인 차원을 추가하였다.   
 
 
-#### 4.ones_like   
+#### 4. ones_like   
 
 *<span style="color:gray">Returns a tensor filled with the scalar value 1, with the same size as input.</span>*   
 input으로 제공된 tensor와 같은 size의 1로 이루어진 tensor를 반환한다.    
