@@ -3,7 +3,7 @@ title: "[PyTorch] How to use tensor"
 layout: single
 author_profile: true
 read_time: true
-comments: null
+comments: true
 share: true
 related: true
 categories:
