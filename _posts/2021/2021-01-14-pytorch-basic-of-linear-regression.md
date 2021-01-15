@@ -86,13 +86,13 @@ tags:
 <span style="color:hotpink">※Cost Function = Loss Function = Error Function = Objective Function</span>   
 이제 cost(x)의 값을 줄이는 방법에 대해 생각해볼 필요가 느껴진다.   
 
-### 3.Optimize   
+#### 3.Optimize   
 이제 Cost값을 줄이는 방법에 대해 고민해보자.   
 ![image](https://user-images.githubusercontent.com/68745983/104594529-9fcc4b00-56b4-11eb-88eb-72d0f81e5802.png)   
 Linear Regression에서 Cost Function의 값은 2차 방정식이므로 위와 같이 그래프를 그릴 수 있다.   
 이때, 우리는 최소 cost값을 찾기위해서 극솟값을 찾아내야한다.   
 그렇다면 어떻게 극솟값을 찾아낼 수 있을 까?   
-#### 1) Gradient Descent   
+##### 1) Gradient Descent   
 ![image](https://user-images.githubusercontent.com/68745983/104595755-6268bd00-56b6-11eb-8f1a-bab79c789e16.png)   
 위와 같이 특정 W값에서 시작해 극솟값을 찾아가면 된다.
 그렇다면, 현재 W의 값이 극솟값이라는 것은 어떻게 알 수 있을까?   
@@ -110,5 +110,5 @@ Linear Regression에서 Cost Function의 값은 2차 방정식이므로 위와 �
 
 
 
-#### 4. Reference   
+### Reference   
 [03 선형회귀_선형 회귀](https://wikidocs.net/53560)
