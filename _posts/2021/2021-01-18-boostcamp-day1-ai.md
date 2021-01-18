@@ -7,7 +7,7 @@ comments: true
 share: true
 related: true
 categories:
-- Machine-Learning
+- BoostCamp_AI_Tech
 tags:
 - Machine-Learning_basic
 - BoostCamp_AI_Tech
