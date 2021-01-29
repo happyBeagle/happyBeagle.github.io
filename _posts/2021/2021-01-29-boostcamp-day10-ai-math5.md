@@ -27,6 +27,63 @@ toc_label: contents
 * `pyplot`객체에 그래프를 쌓은 다음 flush한다.   
 * ~~가장 큰 단점은 argument를 kwargs로 받아 고정된 argument가 없어 alt+tab으로 확인이 어렵다.~~    
 
+이제 matplotlib를 이용하여 여러 그래프를 그려보자.   
+1. 가장 기본적인 그래프를 그려보자.  
+```python    
+y = x**2
+```    
+	![image](https://user-images.githubusercontent.com/68745983/106309254-339d3a00-62a5-11eb-9b80-b86968d51bec.png)   
+
+2. 두개의 그래프를 하나의 좌표평면에 그려보자.
+	* graph는 원래 figure객체에 생성된다.  
+	* pyplot 객체사용시, 기본 figure에 그래프가 그려진다.    
+	![image](https://user-images.githubusercontent.com/68745983/106309795-fa18fe80-62a5-11eb-9a66-f0c7fab0a125.png)    
+
+3. 서로 다른 좌표평면에 그래프를 그려보자.   
+![image](https://user-images.githubusercontent.com/68745983/106310354-c68aa400-62a6-11eb-8c4d-23eacb715249.png)   
+
+	* ※ 참고 해두자.  
+	* ![image](https://user-images.githubusercontent.com/68745983/106310394-d6a28380-62a6-11eb-8deb-32d805e283b5.png)    
+	* 해당 예제의 그림에서는 2*3크기의 subplot가 총 6개 띄워져있다.   
+
+4. color속성을 이용해 그래프에 색을 입히자.    
+	```python   
+	plt.plot(x_1, y_1, color="#eeefff")
+	plt.plot(x_1, y_1, color="red")
+	```   
+5. 그래프의 선을 점선 등 다양한 모양으로 변경시키자.   
+	```python   
+	plt.plot(x_1, y_1, c='b', linestyle="dashed")
+	plt.plot(x_1, y_1, c='g', ls="dotted")
+	
+	plt.title("test")#pyplot에 제목을 부여한다. subplot별 제목부여도 가능하다.  
+	plt.title("$y = \\frac{ax + b}{test}$") #latex타입의 표현도 가능하다
+
+	plt.legend(shadow=True, fancybox=true, loc="lower right") #범례를 표시해준다.   
+	plt.grid(True, lw=0.4, ls="--", c=".90")#graph보조선을 긋는 grid와 xy축 범위 한계를 지정해준다.
+	plt.xlim(-100, 200)
+	plt.ylim(-200, 200) 
+	```   
+6. **scatter** 함수를 이용해보자.    
+![image](https://user-images.githubusercontent.com/68745983/106311887-313cdf00-62a9-11eb-90a4-6eb2d744db87.png)   
+[scatter marker 종류들](https://matplotlib.org/3.1.1/api/markers_api.html)   
+
+7. 히스토그램을 그려보자.   
+![image](https://user-images.githubusercontent.com/68745983/106312164-985a9380-62a9-11eb-8849-b38c6f4872c2.png)   
+
+이외에도 bar, boxplot등 다양한 종류의 그래프를 그릴 수 있다.   
+
+### seaborn   
+* statistical data visualization   
+* matplotlib를 더 쉽게 사용할 수 있도록 제작되었다.   
+* 복잡한 그래프를 간단하게 만들 수 있는 wrapper이다.   
+* matplotlib와 같은 기본적인 plot이다.   
+* lineplot, scatterplot, countplot 등....   
+
+**[PLUS] TIP**  
+![image](https://user-images.githubusercontent.com/68745983/106312538-29316f00-62aa-11eb-937c-09553c92757b.png)    
+![image](https://user-images.githubusercontent.com/68745983/106312612-49612e00-62aa-11eb-8004-f050ed24ed27.png)   
+
 
 ## 2. 통계학 맛보기
 ### 1) 모수 추정  
@@ -96,7 +153,8 @@ toc_label: contents
 >  	[참고 블로그](https://jjangjjong.tistory.com/41)  
 
 * 데이터 집합 X가 **독립적으로 추출되었을 경우 <span style="color:orange">로그 가능도</span>를 최적화** 한다.   
-![image](https://user-images.githubusercontent.com/68745983/106278265-c924d380-627d-11eb-9781-161ecf216b80.png)    
+![image](https://user-images.githubusercontent.com/68745983/106278265-c924d380-627d-11eb-9781-161ecf216b80.png)     
+
 
 ###### 로그가능도를 왜 활용할까?    
 * 로그가능도를 최적화하는 모수는 가능도를 최적화하는 MLE가 된다.    
