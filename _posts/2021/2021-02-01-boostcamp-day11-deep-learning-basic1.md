@@ -110,6 +110,9 @@ step size가 gradient의 rescaling에 영향을 받지 않는다는 장점이 �
 
 **Big Language Models**   
 OpenAI가 개발한 새로운 강력한 언어모델이다.(GPT-3)    
+[GPT-3](https://arxiv.org/pdf/2005.14165.pdf)    
+[GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)    
+[GPT-1](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)    
 
 #### 2020년   
 **Self supervised Learning**   
@@ -120,7 +123,7 @@ OpenAI가 개발한 새로운 강력한 언어모델이다.(GPT-3)
 등을 활용한다.    
 그런데 최근에는 **자기지도 학습이 주목 받고 있다.** (다음에 기회가 된다면 알아보자.)    
 
-[관련 블로그 1](https://velog.io/@tobigs-gm1/Self-supervised-learning-paper-review)
+[관련 블로그 1](https://velog.io/@tobigs-gm1/Self-supervised-learning-paper-review)   
 [관련 블로그 2](https://greeksharifa.github.io/self-supervised%20learning/2020/11/01/Self-Supervised-Learning/#self-supervised-learning)
 
 
