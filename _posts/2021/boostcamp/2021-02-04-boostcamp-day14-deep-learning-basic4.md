@@ -63,7 +63,28 @@ tags:
 
 ## 2. Recurrent Neural Networks    
 ### 1) Sequential Model    
+* Sequential data는 시간의 개념이 더해진 data를 의미한다. 예로 비디오, 소리, motion등이 존재한다.   
+* Problem?    
+	* 데이터의 길이를 알기 어렵다. --> 언제 데이터가 끝날지 모른다.    
+	* 즉, 가변적인 크기의 입력을 감당할 수 있는 model이 필요하다.    
+* Solve?    
+	* **Markov model(first-order autoregressive model)**    
+		* 현재는 바로 직전의 과거에만 의존한다.    
+		* 많은 정보의 소실이 일어난다.     
+		* joint dustrubution을 표현하기 쉬워진다.   
+	* **Latent autoregressive model**   
+		* 중간에 hidden state를 넣어 학습시켜 과거의 정보를 요약한다고 생각한다.    
+		* 즉, hidden state에 의존하여 문제를 해결한다.    
+
 ### 2) Recurrent Neural Network   
+![image](https://user-images.githubusercontent.com/68745983/107882432-9e4ca780-6f2c-11eb-8e74-2d8561a9c5c7.png)   
+* 이전 값 + 입력값으로 결과 값을 계산한다.    
+
+#### long term dependencies
+* 한참 과거의 입력값은 현재에 영향을 주는 것은 힘들다.   
+* 즉, 가까운 과거의 입력만이 현재에 큰 영향을 준다.    
+* 모델의 사고가 제한된다.    
+
 ### 3) Long Short Term Memory (LSTM)    
 ### 4) Gated Recurrent Unit    
 
