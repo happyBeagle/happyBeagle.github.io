@@ -1,5 +1,5 @@
 ---
-title: "[BoostCamp] P-stage stag Tabular Classification day1"
+title: "[BoostCamp] P-stage stage2 Tabular Classification day1"
 layout: single
 author_profile: true
 read_time: true
@@ -12,7 +12,7 @@ toc_label: true
 categories:
 - BoostCamp_AI_Tech
 tags:
-- Pstage_Tabluar_Classification
+- Pstage_Tabular_Classification
 ---
 
 # [BoostCamp] P-stage stage2 정형 데이터 분류 day1  
